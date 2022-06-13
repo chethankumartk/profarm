@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/signout"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/changepass"
+        app:showAsAction="never"
+        android:title="Change Password"/>
+    <item
+        android:id="@+id/changeemail"
+        android:title="Change Email"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/deleteuser"
+        android:title="Delete User"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/searchmadakke"
+        android:icon="@drawable/searchh"
+        app:showAsAction="always|collapseActionView"
+        android:title="search"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item
+        android:id="@+id/additem"
+        android:title="additem"
+        app:showAsAction="never"
+
+        />
+
+</menu>

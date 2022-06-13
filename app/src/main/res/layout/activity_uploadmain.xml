@@ -1,0 +1,560 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eaeaea"
+    tools:context=".uploadmain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="select image"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:id="@+id/selectimage"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttoninnondhback"
+                    android:textStyle="bold"
+
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:id="@+id/image"
+                    android:src="@drawable/shadow"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Product Details:"
+                android:gravity="center|left"
+                android:textColor="#555555"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Category"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <Spinner
+                    android:id="@+id/spinnercategory"
+                    android:layout_height="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/buttonwhiteback"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Crop Name"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:id="@+id/cropname"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+                    android:hint="Enter Cropn name here"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Quantity (min 100KG)"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:inputType="number"
+                    android:id="@+id/quantity"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Price /kg"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/price"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:inputType="numberSigned"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Contact:"
+                android:gravity="center|left"
+                android:textColor="#555555"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Name"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/name"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Phone"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:id="@+id/phone"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Email"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/email"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Note: Click here to change the above Information"
+                android:gravity="center|left"
+                android:textColor="#555555"
+                android:layout_marginRight="10dp"
+                android:id="@+id/noteaboveinfo"
+                android:drawableLeft="@drawable/edit"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+
+                />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Address:"
+                android:gravity="center|left"
+                android:textColor="#555555"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="State"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/state"
+                    android:background="@drawable/buttonwhiteback"
+                    android:textColor="#555555"
+                    android:gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="District"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/district"
+                    android:gravity="center"
+                    android:background="@drawable/buttonwhiteback"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Locality"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:id="@+id/locality"
+                    android:gravity="center"
+                    android:background="@drawable/buttonwhiteback"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Address"
+                    android:layout_gravity="top"
+                    android:gravity="center|center_horizontal|top|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:id="@+id/address"
+                    android:background="@drawable/buttonwhiteback"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Note: Click here to change the above address"
+                android:gravity="center|left"
+                android:textColor="#555555"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/edit"
+                android:id="@+id/noteclickadd"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="5"
+                android:text="Upload"
+                android:id="@+id/uploadd"
+                android:textColor="#ffffff"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttoninnondhback"
+                />
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayCategory">
+        <item>@string/Others</item>
+        <item>@string/Grains</item>
+        <item>@string/Vegetables</item>
+        <item>@string/Greens</item>
+        <item>@string/Fruits</item>
+        <item>@string/DryFruit</item>
+
+    </string-array>
+</resources>

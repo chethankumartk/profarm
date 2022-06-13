@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+
+
+                    android:maxLines="1"
+                    android:id="@+id/Username"
+
+
+
+
+
+
+                    android:inputType="textEmailAddress"
+
+                    android:singleLine="true"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+
+
+                    android:maxLines="1"
+                    android:id="@+id/email"
+
+
+
+
+
+
+                    android:inputType="textEmailAddress"
+
+                    android:singleLine="true"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgrnd"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+
+                android:id="@+id/save"
+                android:text="Save"
+
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- Link to Login Screen -->
+    </RelativeLayout>
+
+
+
+
+
+

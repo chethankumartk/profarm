@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/farmer"
+            android:icon="@drawable/farmerconsole"
+            android:title="Farmer Console" />
+        <item
+            android:id="@+id/changeloc"
+            android:icon="@drawable/location"
+            android:title="Change Location" />
+        <item
+            android:id="@+id/paymadu"
+            android:icon="@drawable/rupee"
+            android:title="Donate to ProFarm" />
+        <item
+            android:id="@+id/checkvisitors"
+            android:icon="@drawable/farmerconsole"
+            android:title="Check Visitors" />
+    </group>
+    <item android:title="Farmer">
+        <menu>
+            <item
+                android:id="@+id/updatefarmerdetails"
+                android:icon="@drawable/edit"
+                android:title="Become Farmer" />
+        </menu>
+    </item>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/aboutdhu"
+                android:title="AboutUs" />
+        </menu>
+    </item>
+
+</menu>

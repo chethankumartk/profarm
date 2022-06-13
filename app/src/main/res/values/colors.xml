@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#058e3f</color>
+    <color name="colorPrimaryDark">#058e3f</color>
+    <color name="colorAccent">#058e3f</color>
+    <color name="blackk">#ee000000</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+    <color name="orange">#ccfa5c08</color>
+    <color name="textTabLight">#fa5c08</color>
+    <color name="textTabBright">#058e3f</color>
+    <color name="arc">#e1f1e8</color>
+
+</resources>

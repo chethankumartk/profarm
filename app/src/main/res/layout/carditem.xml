@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="true"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:elevation="500dp"
+
+
+
+        app:cardPreventCornerOverlap="false"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+
+
+
+                android:id="@+id/imageView"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shadow"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crops to gwow in summer"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="normal"
+                        android:typeface="monospace"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/summerwinter"
+                        android:layout_centerInParent="true"
+
+                      />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

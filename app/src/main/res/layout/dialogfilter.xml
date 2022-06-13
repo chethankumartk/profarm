@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:background="@drawable/buttoninnondhback"
+                android:textColor="#ffffff"
+                android:text="Category"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:background="@drawable/filterr" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/grain"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/Grains"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/green"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/Greens"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:id="@+id/dry"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/DryFruit"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/vegetable"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/Vegetables"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:id="@+id/fruit"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/Fruits"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="10dp"
+                android:id="@+id/other"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/searchback1"
+                android:text="@string/Others"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="10dp"
+            android:background="@drawable/buttoninnondhback"
+            android:textColor="#ffffff"
+            android:text="Sort By"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorPrimary"/>
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radiohl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Price Low-High"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+
+                />
+            <RadioButton
+                android:id="@+id/radiolh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Price High-Low"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <RadioButton
+                android:id="@+id/radiora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text=" Recently Added"
+                />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="10dp"
+            android:id="@+id/removefilter"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/searchback1"
+            android:text="Remove Filters"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Apply"
+            android:gravity="center"
+            android:id="@+id/apply"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+

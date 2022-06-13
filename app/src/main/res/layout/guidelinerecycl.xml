@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:elevation="10dp"
+        android:id="@+id/star"
+        android:visibility="gone"
+
+        android:layout_marginRight="5.5dp"
+        android:background="@drawable/z"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:layout_gravity="center"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:paddingBottom="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+
+                android:paddingBottom="8dp"
+                android:gravity="center|left"
+                android:text="profitable"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/card"
+        app:cardUseCompatPadding="true"
+        android:clipToPadding="false"
+        android:layout_margin="10dp"
+        android:clipChildren="false"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/cropimage"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fruits"
+                        />
+
+
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Month"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:typeface="monospace" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/Cropname"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+
+        android:text="@string/SODIUM" />
+</RelativeLayout>
+

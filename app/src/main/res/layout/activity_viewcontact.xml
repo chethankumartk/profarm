@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMadiroList.ViewContactOfFarmer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/chenagkanakke"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Email"
+                    android:typeface="monospace"
+                    android:textColor="#ffffff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ffffff"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="Phone"
+                    android:typeface="monospace"
+                    android:textColor="#ffffff"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/welcomeback2"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/cemail"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+
+                    android:typeface="monospace"
+                    android:textColor="#666666"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#777777"
+                    />
+
+
+                <TextView
+                    android:id="@+id/cphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:typeface="monospace"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+
+                    android:textColor="#666666"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttoninnondhback"
+            android:text="Add Contact"
+            android:id="@+id/addcontact"
+            />
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

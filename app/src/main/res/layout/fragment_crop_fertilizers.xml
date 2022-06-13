@@ -1,0 +1,514 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/l"
+    tools:context=".CropGuidelines.CropFertilizers">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:clipToPadding="false"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:id="@+id/youtube_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="4dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom|left"
+                                android:paddingLeft="20dp"
+                                android:textColor="#000000"
+                                android:text="Cropname"
+                                android:textSize="11sp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/cropname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:gravity="top|left"
+                                android:paddingLeft="20dp"
+                                android:textColor="#777777"
+                                android:textSize="18sp"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#000000"
+
+                            android:text="Scientific Name"
+                            android:textSize="11sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/sciencename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#777777"
+                            android:textSize="18sp"
+
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom|left"
+                                android:paddingLeft="20dp"
+                                android:text="Cost per Kg in Market"
+                                android:textSize="11dp"
+                                android:textColor="#000000"
+
+
+                                />
+
+                            <TextView
+                                android:id="@+id/cpkm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:gravity="top|left"
+                                android:paddingLeft="20dp"
+                                android:textColor="#777777"
+                                android:textSize="18sp"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:background="#dddddd"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom|left"
+                                android:paddingLeft="20dp"
+                                android:textSize="11sp"
+                                android:text="Season"
+                                android:textColor="#000000"
+
+
+                                />
+
+                            <TextView
+                                android:id="@+id/season"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:gravity="top|left"
+                                android:paddingLeft="20dp"
+                                android:textColor="#777777"
+                                android:textSize="18sp"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:paddingLeft="20dp"
+                            android:text="Yeild Per Hectare"
+                            android:textSize="11sp"
+                            android:textColor="#000000"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/yph"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#777777"
+                            android:textSize="18sp"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:paddingLeft="20dp"
+                            android:text="Soil Type"
+                            android:textColor="#000000"
+
+                            android:textSize="11sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/soiltype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#777777"
+                            android:textSize="18sp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:paddingLeft="20dp"
+                            android:text="First Harvest"
+                            android:textColor="#000000"
+
+                            android:textSize="11sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/firstharvest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#777777"
+                            android:textSize="18sp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:textColor="#000000"
+
+                            android:paddingLeft="20dp"
+                            android:text="Harvest Time"
+                            android:textSize="11sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/harvesttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:paddingLeft="20dp"
+                            android:textColor="#777777"
+                            android:textSize="18sp"
+
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom|left"
+                            android:paddingLeft="20dp"
+                            android:text="More Details"
+                            android:textColor="#000000"
+                            android:textSize="11sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/adddetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="top|left"
+                            android:textColor="#777777"
+                            android:text="@string/SODIUM"
+                            android:background="#eaeaea"
+                            android:textSize="18sp"
+                            android:padding="20dp"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#dddddd"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gradient3"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:backgroundTint="#777777"
+
+                android:clipChildren="false"
+
+                >
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="100dp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

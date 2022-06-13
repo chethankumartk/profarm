@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+
+    app:cardCornerRadius="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardUseCompatPadding="true"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    card_view:cardElevation="5dp"
+    app:cardElevation="3dp"
+    android:id="@+id/card"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+
+
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/image_view_upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <TextView
+                android:id="@+id/cropname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/shadow"
+                android:text="chethan"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="80dp"
+
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                android:background="@drawable/gradient4"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:text="Quantity left"
+                                    android:typeface="monospace"
+                                    android:textColor="#333333"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="Price"
+                                    android:textSize="12sp"
+                                    android:typeface="monospace"
+                                    android:textColor="#333333"
+                                    />
+
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:id="@+id/quantity"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:textSize="12sp"
+                                    android:text="quantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:typeface="monospace"
+                                    android:textColor="#333333"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:id="@+id/price"
+                                    android:textSize="12sp"
+                                    android:typeface="monospace"
+                                    android:textColor="#333333"
+                                    />
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

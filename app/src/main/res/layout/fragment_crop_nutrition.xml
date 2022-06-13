@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".CropGuidelines.CropNutrition">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                >
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:layout_width="250dp"
+                    android:id="@+id/arc"
+                    app:arc_bottom_text="@string/DryFruit"
+                    android:layout_height="250dp"
+                    app:arc_bottom_text_size="24sp"
+                    app:arc_text_size="60sp"
+                    app:arc_suffix_text_padding="30dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:id="@+id/whycar"
+                    android:textAllCaps="true"
+                    android:text="why?"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="how much?"
+                    android:id="@+id/howcar"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/fatcircle"
+                        app:circle_finished_color="@color/colorPrimaryDark"
+                        app:circle_progress="20"
+                        app:circle_text_size="15sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/FAT"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:id="@+id/whyfat"
+                            android:textSize="8sp"
+                            android:textAllCaps="true"
+                            android:paddingLeft="20dp"
+                            android:text="why?"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:id="@+id/howfat"
+                            android:text="how much?"
+                            android:paddingRight="20dp"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            />
+
+
+                    </LinearLayout>
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:circle_finished_color="@color/colorPrimaryDark"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/carbcircle"
+                        app:circle_progress="20"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/CARBS"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:id="@+id/whycarbs"
+                            android:paddingLeft="20dp"
+                            android:textAllCaps="true"
+                            android:text="why?"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:id="@+id/howcarbs"
+                            android:gravity="right"
+                            android:text="how much?"
+                            android:textAllCaps="true"
+                            android:paddingRight="20dp"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#e0e0e0"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:circle_finished_color="@color/colorPrimaryDark"
+                        app:circle_progress="20"
+                        android:id="@+id/protcircle"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/PROTEIN"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:id="@+id/whyprot"
+                            android:textAllCaps="true"
+                            android:paddingLeft="20dp"
+                            android:text="why?"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:id="@+id/howprot"
+                            android:paddingRight="20dp"
+                            android:text="how much?"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            />
+
+
+                    </LinearLayout>
+                    <com.github.lzyzsd.circleprogress.CircleProgress
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:circle_finished_color="@color/colorPrimaryDark"
+                        android:layout_marginTop="10dp"
+                        app:circle_progress="20"
+                        android:id="@+id/fibrecircle"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/FIBRE"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:textAllCaps="true"
+                            android:paddingLeft="20dp"
+                            android:text="why?"
+                            android:id="@+id/whyfibre"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:text="how much?"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:id="@+id/howfibre"
+                            android:textSize="8sp"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/CALCIUM"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:id="@+id/calcium"
+                        android:layout_marginLeft="20dp"
+                        android:text="20g"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/POTASSIUM"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:id="@+id/potassium"
+                        android:layout_marginLeft="20dp"
+                        android:text="20%"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/IRON"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/iron"
+                        android:text="20%"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/CHOLESTROL"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"
+                        android:text="20%"
+                        android:id="@+id/cholestrol"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/VITAMINA"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="true"
+                        android:id="@+id/vitamina"
+                        android:text="20%"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:text="@string/VITAMINC"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="20dp"
+                        android:text="20%"
+                        android:id="@+id/vitaminc"
+                        android:textColor="#707070"
+                        android:textSize="13dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+                <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/SODIUM"
+                    android:textColor="#000000"
+                    android:paddingLeft="40dp"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:text="20g"
+                    android:textColor="#555555"
+                    android:textSize="15dp"
+                    android:id="@+id/sodium"
+
+                    />
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</FrameLayout>

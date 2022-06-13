@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".Register">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+
+
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:id="@+id/card"
+                    android:layout_marginTop="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_gravity="center"
+                    android:clipToPadding="false"
+                    android:layout_margin="10dp"
+                    android:clipChildren="false"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+
+                                        android:layout_height="match_parent"
+                                        android:layout_width="match_parent"
+                                        android:src="@drawable/account"
+                                        android:id="@+id/profImage"
+
+                                        android:layout_gravity="center"
+                                        />
+
+
+
+
+                                </FrameLayout>
+
+
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/editt"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true">
+
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/shadow" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/edit"
+                                android:tint="@color/white" />
+
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+
+
+                        android:maxLines="1"
+                        android:id="@+id/Username"
+
+
+
+
+
+
+                        android:inputType="textEmailAddress"
+
+                        android:singleLine="true"
+                        />
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+
+
+                        android:maxLines="1"
+                        android:id="@+id/email"
+
+
+
+
+
+
+                        android:inputType="textEmailAddress"
+
+                        android:singleLine="true"
+                        />
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+
+                        android:imeOptions="actionUnspecified"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:id="@+id/password"
+
+
+                        android:inputType="textPassword"
+
+
+                        android:focusableInTouchMode="true"
+
+
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgrnd"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="30dp"
+
+                    android:id="@+id/sign_up_button"
+                    android:text="Sign up"
+
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+        <!-- Link to Login Screen -->
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

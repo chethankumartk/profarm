@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/sharee"
+        android:icon="@drawable/ic_menu_share"
+        android:iconTint="#ffffff"
+        app:showAsAction="always"
+        android:title="@string/title_wishlist" />
+
+
+
+
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/wishlistwhite"
+        android:iconTint="#ffffff"
+        app:showAsAction="always"
+        android:title="@string/title_wishlist" />
+
+
+
+</menu>
